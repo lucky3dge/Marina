@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
+ <!-- Font Awesome (REQUIRED for icons) -->
+ <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap 5 Bundle JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body data-page="products">
+    <!-- Nav Bar -->
+    <section class="nav1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+
+    <!-- Brand with Logo -->
+   <a class="navbar-brand" href="#">
+     <img src="img/logo.png" class="brand-logo">
+     <div>
+       <span class="brand-main">MARIINA</span><br>
+       <span class="brand-sub">Nigeria CN LTD</span><br>
+       <span class="brand-rc">RC No: 8293704</span>
+     </div>
+   </a>
+
+
+   <!-- Toggle -->
+   <button class="navbar-toggler" type="button" id="menuToggler">
+  <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <!-- Menu -->
+   <div class="collapse navbar-collapse" id="mainNavbar">
+
+     <!-- Push menu to the right -->
+     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+       <li class="nav-item">
+         <a class="nav-link active" href="index.html">Home</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="products.html">Products</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="contact.html">Contact</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="about.html">About</a>
+       </li>
+  </ul>
+</li>
+</ul>
+     <!-- Search -->
+     <form class="d-flex ms-lg-3" onsubmit="globalSearch(event)">
+  <input id="globalSearchInput"
+         class="form-control me-2"
+         type="search"
+         placeholder="Search products...">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+   </div>
+ </div>
+</nav>
+</section>
+      <!-- TOP IMAGE MENU -->
+    <div class="menu-header">
+    </div>
+    <!-- Search -->
+    <form class="d-flex d-lg-none search-form-mobile"
+          onsubmit="searchProducts(); return false;">
+      <i class="fas fa-search search-icon"></i>
+
+      <input
+        id="searchInput"
+        class="form-control search-input-mobile"
+        type="search"
+        placeholder="Search products..."
+        onkeyup="searchProducts()"
+      >
+
+      <button class="btn search-btn-mobile" type="submit">Search</button>
+    </form>
+
+
+    <!-- HEADER -->
+<div class="container my-4 text-center">
+  <h2 class="section-title">Products</h2>
+</div>
+    <!-- ================= PAGE 1 ================= -->
+<div class="container my-5 product-page" id="page1">
+  <div class="row">
+    <!-- Products 1–12 -->
+
+    <!-- Product 1 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/1.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Farming Tractor</h5>
+          <hr class="my-2">
+          <p class="card-text">A powerful agricultural tractor designed for efficient land preparation, soil cultivation, and heavy-duty farming operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/2.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Heavy-Duty Farming Tractor</h5>
+          <hr class="my-2">
+          <p class="card-text">A high-performance agricultural tractor built for powerful field operations, offering strong traction, durability, and comfort for large-scale farming tasks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/3.jpg" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Solar Street Lights</h5>
+          <hr class="my-2">
+          <p class="card-text">An eco-friendly lighting solutions that use solar energy to provide automatic, reliable illumination at night, reducing electricity costs and supporting sustainable development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/4.jpg" class="card-img-top" alt="Product 4">
+        <div class="card-body">
+          <h5 class="card-title">Combined Harvester</h5>
+          <hr class="my-2">
+          <p class="card-text">A high-efficiency agricultural machine designed to harvest, thresh, and clean crops in one continuous operation, maximizing productivity and reducing labor.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/5.jpg" class="card-img-top" alt="Product 5">
+        <div class="card-body">
+          <h5 class="card-title">Fertilizer Spreader Trailer</h5>
+          <hr class="my-2">
+          <p class="card-text">A heavy-duty agricultural trailer designed for efficient and uniform spreading of fertilizers and soil nutrients across large farming areas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/6.jpg" class="card-img-top" alt="Product 6">
+        <div class="card-body">
+          <h5 class="card-title">Electric Cargo Tricycle</h5>
+          <hr class="my-2">
+          <p class="card-text">An eco-friendly three-wheel vehicle built for efficient and reliable cargo transport.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/7.jpg" class="card-img-top" alt="Product 7">
+        <div class="card-body">
+          <h5 class="card-title">Xingyue L 2022</h5>
+          <hr class="my-2">
+          <p class="card-text">A modern luxury SUV offering advanced safety features, spacious comfort, and a smooth driving experience with elegant design.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/8.jpg" class="card-img-top" alt="Product 8">
+        <div class="card-body">
+          <h5 class="card-title">Xiaomi SU7</h5>
+          <hr class="my-2">
+          <p class="card-text">A cutting-edge EV delivering a revolutionary driving experience with smart technology and efficiency.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/9.jpg" class="card-img-top" alt="Product 9">
+        <div class="card-body">
+          <h5 class="card-title">Avatr 11 2024</h5>
+          <hr class="my-2">
+          <p class="card-text">A futuristic luxury electric SUV offering sleek design, intelligent features, and high-performance driving.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/10.jpg" class="card-img-top" alt="Product 10">
+        <div class="card-body">
+          <h5 class="card-title">Farming Tractor</h5>
+          <hr class="my-2">
+          <p class="card-text">A reliable agricultural machine designed to handle plowing, hauling, and other farm operations efficiently.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/11.jpg" class="card-img-top" alt="Product 11">
+        <div class="card-body">
+          <h5 class="card-title">Passenger Electric Tricycle</h5>
+          <hr class="my-2">
+          <p class="card-text">An eco-friendly three-wheel vehicle designed for comfortable and efficient passenger transport.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="col-6 col-lg-4 mb-4 product-item">
+      <div class="card h-100">
+        <img src="img/12.jpg" class="card-img-top" alt="Product 12">
+        <div class="card-body">
+          <h5 class="card-title">Four-Wheel 80HP Tractor</h5>
+          <hr class="my-2">
+          <p class="card-text">A powerful four-wheel tractor built for efficient farming and heavy-duty agricultural work.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="container my-5 product-page d-none" id="page2">
+<div class="row">
+
+  <!-- Product 13 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/13.jpg" class="card-img-top" alt="Product 13">
+      <div class="card-body">
+        <h5 class="card-title">Grader Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">A heavy-duty machine designed for leveling and smoothing surfaces in construction and roadwork.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 14 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/14.jpg" class="card-img-top" alt="Product 14">
+      <div class="card-body">
+        <h5 class="card-title">Rice Mill Processing Plant</h5>
+        <hr class="my-2">
+        <p class="card-text">Commercial 20 Ton Per Day Rice Polisher Processing Complete Set Rice Milling Machine</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 15 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/15.jpg" class="card-img-top" alt="Product 15">
+      <div class="card-body">
+        <h5 class="card-title">Road Roller</h5>
+        <hr class="my-2">
+        <p class="card-text">A powerful construction machine used for compacting and smoothing roads and surfaces.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 16 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/16.jpg" class="card-img-top" alt="Product 16">
+      <div class="card-body">
+        <h5 class="card-title">Concrete Mixer Truck</h5>
+        <hr class="my-2">
+        <p class="card-text">A truck equipped to mix and transport concrete efficiently to construction sites.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 17 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/17.jpg" class="card-img-top" alt="Product 17">
+      <div class="card-body">
+        <h5 class="card-title">Electical Appliances</h5>
+        <hr class="my-2">
+        <p class="card-text">A handy checklist of essential appliances to make your home fully functional, comfortable, and efficient.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 18 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/18.jpg" class="card-img-top" alt="Product 18">
+      <div class="card-body">
+        <h5 class="card-title">Excavator</h5>
+        <hr class="my-2">
+        <p class="card-text">A powerful and versatile construction machine designed for digging, lifting, trenching, and material handling. Ideal for construction, mining, road works, and large-scale earthmoving projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 19 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/19.jpg" class="card-img-top" alt="Product 19">
+      <div class="card-body">
+        <h5 class="card-title">Wheel Loader</h5>
+        <hr class="my-2">
+        <p class="card-text">A powerful construction machine designed for efficient loading, lifting, and material handling.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 20 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/20.jpg" class="card-img-top" alt="Product 20">
+      <div class="card-body">
+        <h5 class="card-title">Liquid Filling Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An industrial machine designed for accurate and efficient filling of liquids into containers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 21 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/21.jpg" class="card-img-top" alt="Product 21">
+      <div class="card-body">
+        <h5 class="card-title">Dump Truck</h5>
+        <hr class="my-2">
+        <p class="card-text">A heavy-duty truck designed to transport and unload bulk materials like sand, gravel, or soil.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 22 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/22.jpg" class="card-img-top" alt="Product 22">
+      <div class="card-body">
+        <h5 class="card-title">Fire Service Truck</h5>
+        <hr class="my-2">
+        <p class="card-text">A specialized vehicle equipped for firefighting and emergency response operations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 23 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/23.jpg" class="card-img-top" alt="Product 23">
+      <div class="card-body">
+        <h5 class="card-title">Bottle Water Production Line</h5>
+        <hr class="my-2">
+        <p class="card-text">A complete system for efficiently producing, filling, and packaging bottled water.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 24 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/24.jpg" class="card-img-top" alt="Product 24">
+      <div class="card-body">
+        <h5 class="card-title">Truck Crane</h5>
+        <hr class="my-2">
+        <p class="card-text">A mobile crane mounted on a truck for lifting and transporting heavy loads efficiently.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ================= PAGE 3 ================= -->
+<div class="container my-5 product-page d-none" id="page3">
+<div class="row">
+
+  <!-- Product 25 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/25.jpg" class="card-img-top" alt="Product 25">
+      <div class="card-body">
+        <h5 class="card-title">Rock And Stone Crusher</h5>
+        <hr class="my-2">
+        <p class="card-text">A heavy-duty machine designed for crushing rocks and stones for construction and mining use.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 26 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/26.jpg" class="card-img-top" alt="Product 26">
+      <div class="card-body">
+        <h5 class="card-title">Mobile Water Drilling Rig</h5>
+        <hr class="my-2">
+        <p class="card-text">A mobile drilling unit mounted on a truck for efficient water well drilling operations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 27 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/27.jpg" class="card-img-top" alt="Product 27">
+      <div class="card-body">
+        <h5 class="card-title">Howo Heavy Truck Head</h5>
+        <hr class="my-2">
+        <p class="card-text">A powerful truck head designed for long-haul transport and heavy-duty operations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 28 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/28.jpg" class="card-img-top" alt="Product 28">
+      <div class="card-body">
+        <h5 class="card-title">Truck Water Drilling Rig</h5>
+        <hr class="my-2">
+        <p class="card-text">A portable drilling machine designed for efficient water well drilling in various locations.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 29 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/29.jpg" class="card-img-top" alt="Product 29">
+      <div class="card-body">
+        <h5 class="card-title">Plastics Recycling Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An industrial machine designed to process and recycle plastic waste into reusable materials.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 30 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/30.jpg" class="card-img-top" alt="Product 30">
+      <div class="card-body">
+        <h5 class="card-title">Packaging Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An industrial machine designed for efficient sealing, wrapping, and packaging of products.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 31 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/31.jpg" class="card-img-top" alt="Product 31">
+      <div class="card-body">
+        <h5 class="card-title">Fully Automated Rice Packaging Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">A high-efficiency machine designed to automatically weigh, fill, and package rice with precision.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 32 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/32.jpg" class="card-img-top" alt="Product 32">
+      <div class="card-body">
+        <h5 class="card-title">Rubber Molding Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An industrial machine designed to shape and mold rubber products with precision and efficiency.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 33 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/33.jpg" class="card-img-top" alt="Product 33">
+      <div class="card-body">
+        <h5 class="card-title">Diapers Making Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An automated machine designed for high-speed production of disposable diapers with consistent quality.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 34 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/34.jpg" class="card-img-top" alt="Product 34">
+      <div class="card-body">
+        <h5 class="card-title">Grain Cleansing Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An agricultural machine designed to clean and remove impurities from grains efficiently.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 35 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/35.jpg" class="card-img-top" alt="Product 35">
+      <div class="card-body">
+        <h5 class="card-title">Bag Sack Making Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An industrial machine designed to efficiently produce durable bags and sacks for packaging.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 36 -->
+  <div class="col-6 col-lg-4 mb-4 product-item">
+    <div class="card h-100">
+      <img src="img/36.jpg" class="card-img-top" alt="Product 36">
+      <div class="card-body">
+        <h5 class="card-title">Laminated Tube Making Machine</h5>
+        <hr class="my-2">
+        <p class="card-text">An industrial machine designed to manufacture laminated tubes for packaging creams, gels, and other products.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- ================= PAGINATION ================= -->
+<nav aria-label="Product pages">
+<ul class="pagination justify-content-center mb-5" id="productPagination">
+  <li class="page-item active">
+    <a class="page-link" href="#" onclick="showPage(1); return false;">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#" onclick="showPage(2); return false;">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#" onclick="showPage(3); return false;">3</a>
+  </li>
+</ul>
+</nav>
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+    <div class="Container-fluid">
+      <h3 class="cta-h3">Your Trusted Partner for Global Sourcing & Supply.</h3>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container-fluid text-center">
+
+        <a class="social-icon" href="https://instagram.com/_saleemo10" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Facebook (added after IG) -->
+        <a class="social-icon" href="https://facebook.com/saleem.kabeer.12" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a class="social-icon" href="mailto:marina.cn.ltd@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a class="social-icon" href="https://wa.me/8617804227606" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+      </div>
+    </footer>
+
+          <p class="footer-text">© 2026 Hazoond. All rights reserved.</p>
+
+        </div>
+      </footer>
+
+  </body>
+</html>

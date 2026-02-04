@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>About</title>
+
+  <link rel="icon" href="favicon.ico" />
+  <!-- Font Awesome (REQUIRED for icons) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Your site CSS + JS (kept) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body data-page="about">
+
+  <!-- Nav Bar -->
+  <section class="nav1">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+<div class="container">
+
+  <!-- Brand with Logo -->
+ <a class="navbar-brand" href="#">
+   <img src="img/logo.png" class="brand-logo">
+   <div>
+     <span class="brand-main">MARIINA</span><br>
+     <span class="brand-sub">Nigeria CN LTD</span><br>
+     <span class="brand-rc">RC No: 8293704</span>
+   </div>
+ </a>
+
+
+ <!-- Toggle -->
+ <button class="navbar-toggler" type="button" id="menuToggler">
+<span class="navbar-toggler-icon"></span>
+ </button>
+
+ <!-- Menu -->
+ <div class="collapse navbar-collapse" id="mainNavbar">
+
+   <!-- Push menu to the right -->
+   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.html">Home</a>
+     </li>
+
+     <li class="nav-item">
+       <a class="nav-link" href="products.html">Products</a>
+     </li>
+
+     <li class="nav-item">
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+
+     <li class="nav-item">
+       <a class="nav-link" href="about.html">About</a>
+     </li>
+</ul>
+</li>
+</ul>
+   <!-- Search -->
+   <form class="d-flex ms-lg-3" onsubmit="globalSearch(event)">
+<input id="globalSearchInput"
+       class="form-control me-2"
+       type="search"
+       placeholder="Search products...">
+<button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+ </div>
+</div>
+</nav>
+</section>
+
+  <!-- ============ HERO ============ -->
+  <!-- TOP IMAGE MENU -->
+<div class="menu-header">
+  <header class="aboutHero">
+    <div class="container">
+      <div class="heroGrid">
+        <div class="heroLeft">
+          <div class="heroPill">
+            <span class="pillDot"></span>
+            <span><b>MARIINA Nigeria CN LTD</b> • RC 8293704</span>
+          </div>
+
+          <h1 class="heroTitle">About Our Company</h1>
+          <p class="heroText">
+            Mariina Nigeria CN Ltd is a duly registered Nigerian private limited liability company established to operate as a
+            general contracting, sourcing, procurement, importation, and supply company—delivering structured, dependable solutions
+            and acting as a single-point contractor for complex sourcing and supply requirements.
+          </p>
+
+          <div class="heroButtons">
+            <a class="btnAccent" href="#aboutAccordion">Explore details</a>
+            <a class="btnGhost" href="products.html">View Products</a>
+          </div>
+
+          <div class="heroMini">
+            <div class="miniCard">
+              <div class="miniIcon">✓</div>
+              <div>
+                <b>Structured Delivery</b>
+                <span>Clear processes & documentation</span>
+              </div>
+            </div>
+
+            <div class="miniCard">
+              <div class="miniIcon">✓</div>
+              <div>
+                <b>International Reach</b>
+                <span>Strong supplier networks</span>
+              </div>
+            </div>
+
+            <div class="miniCard">
+              <div class="miniIcon">✓</div>
+              <div>
+                <b>Accountability</b>
+                <span>Compliance-driven execution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address Card (NO email/phone) -->
+        <aside class="heroRight">
+          <div class="glassCard">
+            <h2 class="cardTitle">Offices</h2>
+            <p class="cardSub">We maintain presence in Nigeria and China for smoother sourcing and coordination.</p>
+
+            <div class="addrBlock">
+              <div class="addrBadge">Nigeria Office</div>
+              <p class="addrText">KM 3S Zaria Road, Kura LGA, Kano State, Nigeria</p>
+            </div>
+
+            <div class="addrBlock">
+              <div class="addrBadge">China Office</div>
+              <p class="addrText">
+                广东省广州市白云区建设大道 33 号万益广场 12-1114<br>
+                <span class="muted">(Baiyun District, Guangzhou, Guangdong Province, China)</span>
+              </p>
+            </div>
+
+            <div class="noteStrip">
+              <span class="noteDot"></span>
+              <span>We focus on verified sourcing, safe procurement, and timely delivery.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ COLLAPSIBLE CONTENT (Accordion) ============ -->
+  <main class="container sectionPad">
+    <div class="sectionHead">
+      <h2 class="sectionTitle">Company Details</h2>
+    </div>
+
+    <div class="accordion accordion-flush aboutAccordion" id="aboutAccordion">
+
+      <!-- Company Profile -->
+      <div class="accordion-item aboutItem">
+        <h2 class="accordion-header" id="hdProfile">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cpProfile" aria-expanded="true" aria-controls="cpProfile">
+            Company Profile
+          </button>
+        </h2>
+        <div id="cpProfile" class="accordion-collapse collapse show" aria-labelledby="hdProfile" data-bs-parent="#aboutAccordion">
+          <div class="accordion-body aboutBody">
+            We bridge local demand with global supply through professional contract execution, strong international supplier networks,
+            and efficient logistics coordination—while maintaining high standards of compliance, accountability, and service delivery.
+          </div>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="accordion-item aboutItem" id="services">
+        <h2 class="accordion-header" id="hdServices">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cpServices" aria-expanded="false" aria-controls="cpServices">
+            Core Services
+          </button>
+        </h2>
+        <div id="cpServices" class="accordion-collapse collapse" aria-labelledby="hdServices" data-bs-parent="#aboutAccordion">
+          <div class="accordion-body aboutBody">
+            <div class="svcGrid">
+              <div class="svcCard">
+                <div class="svcTop">
+                  <span class="svcChip">01</span>
+                  <h3>General Contracting, Product Sourcing, Importation & Supply</h3>
+                </div>
+                <p>
+                  We manage supplier identification, negotiation, quality verification, shipping, customs coordination,
+                  and final delivery in strict compliance with contract specifications and timelines.
+                </p>
+              </div>
+
+              <div class="svcCard">
+                <div class="svcTop">
+                  <span class="svcChip">02</span>
+                  <h3>Farming Support, Agricultural & Heavy Machinery Supply</h3>
+                </div>
+                <p>
+                  Supply of agricultural machinery, heavy machinery, industrial equipment, trucks, and specialized equipment
+                  to support farming, construction, infrastructure, and industrial operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="ctaRow">
+              <a class="btnAccent" href="products.html">View Products</a>
+              <a class="btnGhost" href="contact.html">Contact Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track Record -->
+      <div class="accordion-item aboutItem" id="track">
+        <h2 class="accordion-header" id="hdTrack">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cpTrack" aria-expanded="false" aria-controls="cpTrack">
+            Experience & Project Track Record
+          </button>
+        </h2>
+        <div id="cpTrack" class="accordion-collapse collapse" aria-labelledby="hdTrack" data-bs-parent="#aboutAccordion">
+          <div class="accordion-body aboutBody">
+            <ul class="trackList">
+              <li><span class="liDot"></span>Supply of agricultural machinery and equipment</li>
+              <li><span class="liDot"></span>Supply of heavy machinery and industrial equipment</li>
+              <li><span class="liDot"></span>Supply of trucks and transport vehicles</li>
+              <li><span class="liDot"></span>Importation and delivery of a drilling rig valued in excess of ₦300 million, sourced from India</li>
+              <li><span class="liDot"></span>Complete supply of building materials and furniture for Gombe State Government House and Guest Houses</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision / Mission / Values -->
+      <div class="accordion-item aboutItem">
+        <h2 class="accordion-header" id="hdVMV">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cpVMV" aria-expanded="false" aria-controls="cpVMV">
+            Vision • Mission • Core Values
+          </button>
+        </h2>
+        <div id="cpVMV" class="accordion-collapse collapse" aria-labelledby="hdVMV" data-bs-parent="#aboutAccordion">
+          <div class="accordion-body aboutBody">
+            <div class="vmvGrid">
+              <div class="vmvCard">
+                <h3>Vision</h3>
+                <p>To become a trusted Nigerian general contracting and sourcing company with strong international reach and consistent delivery excellence.</p>
+              </div>
+              <div class="vmvCard">
+                <h3>Mission</h3>
+                <p>To deliver professional contracting and sourcing solutions through quality procurement, dependable supply chains, and timely execution.</p>
+              </div>
+              <div class="vmvCard">
+                <h3>Core Values</h3>
+                <p>Integrity, Professionalism, Reliability, Accountability, and Client Focus.</p>
+              </div>
+            </div>
+
+            <div class="ctaRow">
+              <a class="btnAccent" href="products.html">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+      <section class="FT2">
+
+        <!-- Footer -->
+        <footer id="footer">
+          <div class="container-fluid text-center">
+
+            <a class="social-icon" href="https://instagram.com/_saleemo10" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Facebook (added after IG) -->
+            <a class="social-icon" href="https://facebook.com/saleem.kabeer.12" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a class="social-icon" href="mailto:marina.cn.ltd@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+
+            <a class="social-icon" href="https://wa.me/8617804227606" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+
+          </div>
+        </footer>
+
+
+
+          <p class="footer-text">© 2026 Hazoond. All rights reserved.</p>
+
+        </div>
+      </footer>
+      </section>
+</body>
+</html>
